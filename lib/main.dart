@@ -7,30 +7,38 @@ import 'theme/age_group.dart';
 import 'theme/theme.dart';
 
 void main() {
-	runApp(const MoodMateApp());
+  runApp(const MoodMateApp());
 }
 
 class MoodMateApp extends StatelessWidget {
-	const MoodMateApp({super.key});
+  const MoodMateApp({super.key});
 
-	@override
-	Widget build(BuildContext context) {
-		return MultiProvider(
-			providers: [
-				ChangeNotifierProvider(create: (_) => AppState()),
-				ChangeNotifierProvider(create: (_) => EmotionState()),
-			],
-			child: Consumer<AppState>(
-				builder: (context, app, _) {
-					final group = app.childAge != null ? resolveAgeGroup(app.childAge!) : AgeGroup.junior;
-					final router = createRouter(hasProfile: app.childName != null);
-					return MaterialApp.router(
-						title: 'MoodMate',
-						routerConfig: router,
-						theme: buildTheme(group),
-					);
-				},
-			),
-		);
-	}
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => AppState()),
+        ChangeNotifierProvider(create: (_) => EmotionState()),
+      ],
+      child: Consumer<AppState>(
+        builder: (context, app, _) {
+          final group = app.childAge != null
+              ? resolveAgeGroup(app.childAge!)
+              : AgeGroup.junior;
+
+          final router =
+              createRouter(hasProfile: app.childName != null);
+
+          return MaterialApp.router(
+            title: 'MoodMate',
+            routerConfig: router,
+            theme: buildTheme(group),
+
+            // 🔥 REMOVE DEBUG BANNER
+            debugShowCheckedModeBanner: false,
+          );
+        },
+      ),
+    );
+  }
 }
