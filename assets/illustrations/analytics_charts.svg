@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+  <!-- Analytics and Charts Scene -->
+  <defs>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667EEA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764BA2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="50" cy="50" r="40" fill="#E8EAF6" opacity="0.5"/>
+  <circle cx="260" cy="220" r="30" fill="#FFF9C4" opacity="0.5"/>
+  
+  <!-- Main chart board -->
+  <rect x="50" y="50" width="200" height="150" rx="12" fill="#FFFFFF" stroke="#90A4AE" stroke-width="3"/>
+  
+  <!-- Line Chart -->
+  <g transform="translate(65, 70)">
+    <!-- Grid lines -->
+    <line x1="0" y1="0" x2="170" y2="0" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="0" y1="25" x2="170" y2="25" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="0" y1="50" x2="170" y2="50" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="0" y1="75" x2="170" y2="75" stroke="#E0E0E0" stroke-width="1"/>
+    <line x1="0" y1="100" x2="170" y2="100" stroke="#E0E0E0" stroke-width="1"/>
+    
+    <!-- Line chart path -->
+    <path d="M 0,80 L 35,60 L 70,45 L 105,55 L 140,30 L 170,35" 
+          stroke="#667EEA" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Data points -->
+    <circle cx="0" cy="80" r="5" fill="#667EEA"/>
+    <circle cx="35" cy="60" r="5" fill="#667EEA"/>
+    <circle cx="70" cy="45" r="5" fill="#667EEA"/>
+    <circle cx="105" cy="55" r="5" fill="#667EEA"/>
+    <circle cx="140" cy="30" r="5" fill="#667EEA"/>
+    <circle cx="170" cy="35" r="5" fill="#667EEA"/>
+  </g>
+  
+  <!-- Bar Chart (small) -->
+  <g transform="translate(260, 60)">
+    <rect x="0" y="50" width="12" height="30" rx="2" fill="#FF6B9D"/>
+    <rect x="15" y="40" width="12" height="40" rx="2" fill="#4FC3F7"/>
+    <rect x="0" y="90" width="12" height="20" rx="2" fill="#FFD54F"/>
+    <rect x="15" y="85" width="12" height="25" rx="2" fill="#A5D6A7"/>
+  </g>
+  
+  <!-- Trophy/Achievement -->
+  <g transform="translate(40, 150)">
+    <ellipse cx="0" cy="30" rx="12" ry="6" fill="#FFD700" opacity="0.6"/>
+    <rect x="-8" y="15" width="16" height="15" fill="#FFD700"/>
+    <ellipse cx="0" cy="15" rx="10" ry="8" fill="#FFF59D"/>
+    <path d="M -10,15 Q -15,5 -12,0 L -8,0 L -8,15 Z" fill="#FFD700"/>
+    <path d="M 10,15 Q 15,5 12,0 L 8,0 L 8,15 Z" fill="#FFD700"/>
+    <circle cx="0" cy="10" r="3" fill="#FF6347"/>
+    <text x="0" y="11" text-anchor="middle" font-size="6" fill="#FFFFFF" font-weight="bold">1</text>
+  </g>
+  
+  <!-- Progress Circle -->
+  <g transform="translate(260, 170)">
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#E0E0E0" stroke-width="4"/>
+    <circle cx="0" cy="0" r="20" fill="none" stroke="#4CAF50" stroke-width="4"
+            stroke-dasharray="94.25" stroke-dashoffset="23.56" transform="rotate(-90)"/>
+    <text x="0" y="5" text-anchor="middle" font-size="12" fill="#4CAF50" font-weight="bold">75%</text>
+  </g>
+  
+  <!-- Stars -->
+  <g fill="#FFD700">
+    <path d="M 150,25 L 153,32 L 160,33 L 155,38 L 157,45 L 150,41 L 143,45 L 145,38 L 140,33 L 147,32 Z"/>
+    <path d="M 30,220 L 32,225 L 37,226 L 33,230 L 35,235 L 30,232 L 25,235 L 27,230 L 23,226 L 28,225 Z"/>
+  </g>
+  
+  <!-- Upward arrow (growth) -->
+  <g transform="translate(220, 35)">
+    <line x1="0" y1="20" x2="0" y2="0" stroke="#4CAF50" stroke-width="4" stroke-linecap="round"/>
+    <path d="M 0,0 L -5,8 L 5,8 Z" fill="#4CAF50"/>
+  </g>
+</svg>
+

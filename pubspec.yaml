@@ -1,0 +1,48 @@
+name: moodmate
+description: "MoodMate - Kid-focused AI Tutor with emotion-aware, cartoonish UI"
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Navigation and state
+  go_router: ^14.2.0
+  provider: ^6.1.2
+  # Camera and ML
+  camera: ^0.11.0+2
+  google_mlkit_face_detection: ^0.12.0
+  # Files and voice
+  file_picker: ^8.1.2
+  flutter_tts: ^3.8.3
+  speech_to_text: ^6.6.2
+  # UI and charts
+  fl_chart: ^0.69.0
+  lottie: ^3.1.2
+  animated_text_kit: ^4.2.2
+  flutter_svg: ^2.0.10+1
+  google_fonts: ^6.2.1
+  # Animations and interactions
+  flutter_animate: ^4.5.0
+  shimmer: ^3.0.0
+  confetti: ^0.7.0
+  avatar_glow: ^3.0.1
+  # AR and 3D effects
+  flutter_cube: ^0.1.1
+  rive: ^0.13.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/animations/
+    - assets/illustrations/
+    - assets/icons/
+    - assets/avatars/

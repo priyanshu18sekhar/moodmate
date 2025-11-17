@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Colorful background with clouds -->
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0F6FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="400" height="300" fill="url(#skyGrad)"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="80" cy="40" rx="40" ry="25" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="60" cy="45" rx="30" ry="20" fill="#ffffff" opacity="0.8"/>
+  <ellipse cx="100" cy="45" rx="35" ry="22" fill="#ffffff" opacity="0.8"/>
+  
+  <ellipse cx="320" cy="60" rx="45" ry="28" fill="#ffffff" opacity="0.7"/>
+  <ellipse cx="295" cy="65" rx="35" ry="23" fill="#ffffff" opacity="0.7"/>
+  <ellipse cx="345" cy="65" rx="30" ry="20" fill="#ffffff" opacity="0.7"/>
+  
+  <!-- Sun -->
+  <circle cx="350" cy="50" r="30" fill="#FFC107" opacity="0.9"/>
+  <circle cx="350" cy="50" r="25" fill="#FFD54F"/>
+  
+  <!-- Happy kid character 1 -->
+  <g transform="translate(100, 150)">
+    <!-- Body -->
+    <ellipse cx="0" cy="30" rx="35" ry="40" fill="#FF6B9D"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="30" fill="#FFD4A3"/>
+    <!-- Eyes -->
+    <circle cx="-10" cy="-5" r="4" fill="#2C3E50"/>
+    <circle cx="10" cy="-5" r="4" fill="#2C3E50"/>
+    <!-- Smile -->
+    <path d="M -12,5 Q 0,12 12,5" stroke="#2C3E50" stroke-width="2" fill="none"/>
+    <!-- Hair -->
+    <path d="M -20,-15 Q -25,-25 -15,-28 Q -5,-30 0,-32 Q 5,-30 15,-28 Q 25,-25 20,-15" fill="#8B4513"/>
+    <!-- Arms -->
+    <ellipse cx="-35" cy="25" rx="12" ry="30" fill="#FFD4A3" transform="rotate(-20 -35 25)"/>
+    <ellipse cx="35" cy="25" rx="12" ry="30" fill="#FFD4A3" transform="rotate(20 35 25)"/>
+  </g>
+  
+  <!-- Happy kid character 2 -->
+  <g transform="translate(300, 160)">
+    <!-- Body -->
+    <ellipse cx="0" cy="25" rx="32" ry="38" fill="#4FC3F7"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="28" fill="#FFDAB3"/>
+    <!-- Eyes -->
+    <circle cx="-8" cy="-4" r="3.5" fill="#2C3E50"/>
+    <circle cx="8" cy="-4" r="3.5" fill="#2C3E50"/>
+    <!-- Smile -->
+    <path d="M -10,6 Q 0,11 10,6" stroke="#2C3E50" stroke-width="2" fill="none"/>
+    <!-- Hair -->
+    <ellipse cx="0" cy="-18" rx="28" ry="15" fill="#2C3E50"/>
+    <!-- Arms up -->
+    <ellipse cx="-30" cy="10" rx="10" ry="25" fill="#FFDAB3" transform="rotate(-40 -30 10)"/>
+    <ellipse cx="30" cy="10" rx="10" ry="25" fill="#FFDAB3" transform="rotate(40 30 10)"/>
+  </g>
+  
+  <!-- Happy kid character 3 (center) -->
+  <g transform="translate(200, 170)">
+    <!-- Body -->
+    <ellipse cx="0" cy="35" rx="38" ry="45" fill="#A5D6A7"/>
+    <!-- Head -->
+    <circle cx="0" cy="0" r="32" fill="#FFC8A3"/>
+    <!-- Eyes -->
+    <circle cx="-11" cy="-6" r="4.5" fill="#2C3E50"/>
+    <circle cx="11" cy="-6" r="4.5" fill="#2C3E50"/>
+    <!-- Big smile -->
+    <path d="M -15,8 Q 0,18 15,8" stroke="#2C3E50" stroke-width="2.5" fill="none"/>
+    <!-- Hair with pigtails -->
+    <ellipse cx="-22" cy="-10" rx="10" ry="12" fill="#FF6347"/>
+    <ellipse cx="22" cy="-10" rx="10" ry="12" fill="#FF6347"/>
+    <ellipse cx="0" cy="-20" rx="30" ry="18" fill="#FF6347"/>
+    <!-- Arms -->
+    <ellipse cx="-38" cy="30" rx="12" ry="28" fill="#FFC8A3" transform="rotate(-15 -38 30)"/>
+    <ellipse cx="38" cy="30" rx="12" ry="28" fill="#FFC8A3" transform="rotate(15 38 30)"/>
+  </g>
+  
+  <!-- Grass ground -->
+  <ellipse cx="200" cy="280" rx="180" ry="30" fill="#7CB342" opacity="0.6"/>
+  <ellipse cx="200" cy="285" rx="200" ry="25" fill="#8BC34A" opacity="0.5"/>
+  
+  <!-- Stars/sparkles -->
+  <g fill="#FFD700" opacity="0.8">
+    <path d="M 50,120 L 52,125 L 57,125 L 53,128 L 55,133 L 50,130 L 45,133 L 47,128 L 43,125 L 48,125 Z"/>
+    <path d="M 350,100 L 352,104 L 356,104 L 353,107 L 354,111 L 350,108 L 346,111 L 347,107 L 344,104 L 348,104 Z"/>
+    <path d="M 30,180 L 32,183 L 35,183 L 33,185 L 34,188 L 30,186 L 26,188 L 27,185 L 25,183 L 28,183 Z"/>
+  </g>
+</svg>
+

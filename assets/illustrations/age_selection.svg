@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 250">
+  <!-- Age selection illustration with balloons -->
+  <defs>
+    <radialGradient id="balloon1">
+      <stop offset="0%" style="stop-color:#FF6B9D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E91E63;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="balloon2">
+      <stop offset="0%" style="stop-color:#4FC3F7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0288D1;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="balloon3">
+      <stop offset="0%" style="stop-color:#A5D6A7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4CAF50;stop-opacity:1" />
+    </radialGradient>
+    <radialGradient id="balloon4">
+      <stop offset="0%" style="stop-color:#FFD54F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFC107;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Balloon 1 (Pink) - floating -->
+  <g transform="translate(50, 80)">
+    <ellipse cx="0" cy="0" rx="35" ry="42" fill="url(#balloon1)"/>
+    <ellipse cx="-8" cy="-10" rx="12" ry="15" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 0,42 L -3,55 L 3,55 Z" fill="url(#balloon1)"/>
+    <path d="M 0,55 Q 5,70 0,85" stroke="#E91E63" stroke-width="2" fill="none"/>
+    <!-- Age text -->
+    <text x="0" y="10" text-anchor="middle" font-size="28" font-weight="bold" fill="#FFFFFF" font-family="Arial">3-6</text>
+  </g>
+  
+  <!-- Balloon 2 (Blue) - floating higher -->
+  <g transform="translate(250, 60)">
+    <ellipse cx="0" cy="0" rx="38" ry="45" fill="url(#balloon2)"/>
+    <ellipse cx="-10" cy="-12" rx="13" ry="17" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 0,45 L -3,58 L 3,58 Z" fill="url(#balloon2)"/>
+    <path d="M 0,58 Q -5,75 0,90" stroke="#0288D1" stroke-width="2" fill="none"/>
+    <text x="0" y="10" text-anchor="middle" font-size="26" font-weight="bold" fill="#FFFFFF" font-family="Arial">12+</text>
+  </g>
+  
+  <!-- Balloon 3 (Green) - center, highest -->
+  <g transform="translate(150, 50)">
+    <ellipse cx="0" cy="0" rx="40" ry="48" fill="url(#balloon3)"/>
+    <ellipse cx="-9" cy="-13" rx="14" ry="18" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 0,48 L -3,62 L 3,62 Z" fill="url(#balloon3)"/>
+    <path d="M 0,62 Q 4,80 0,95" stroke="#4CAF50" stroke-width="2" fill="none"/>
+    <text x="0" y="12" text-anchor="middle" font-size="24" font-weight="bold" fill="#FFFFFF" font-family="Arial">7-11</text>
+  </g>
+  
+  <!-- Balloon 4 (Yellow) - smaller, lower -->
+  <g transform="translate(100, 140)">
+    <ellipse cx="0" cy="0" rx="28" ry="33" fill="url(#balloon4)"/>
+    <ellipse cx="-7" cy="-8" rx="10" ry="12" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 0,33 L -2,43 L 2,43 Z" fill="url(#balloon4)"/>
+    <path d="M 0,43 Q 3,55 0,65" stroke="#FFA000" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Balloon 5 (Purple) - accent -->
+  <g transform="translate(210, 130)">
+    <ellipse cx="0" cy="0" rx="30" ry="36" fill="#BA68C8"/>
+    <ellipse cx="-7" cy="-9" rx="11" ry="13" fill="#FFFFFF" opacity="0.4"/>
+    <path d="M 0,36 L -2,47 L 2,47 Z" fill="#BA68C8"/>
+    <path d="M 0,47 Q -3,60 0,70" stroke="#9C27B0" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- Confetti -->
+  <g opacity="0.8">
+    <rect x="40" y="200" width="8" height="15" fill="#FF6B9D" transform="rotate(25 44 207)"/>
+    <rect x="120" y="210" width="6" height="12" fill="#4FC3F7" transform="rotate(-15 123 216)"/>
+    <rect x="200" y="205" width="7" height="14" fill="#FFC107" transform="rotate(35 203 212)"/>
+    <circle cx="80" cy="220" r="4" fill="#A5D6A7"/>
+    <circle cx="160" cy="230" r="5" fill="#FF6B9D"/>
+    <circle cx="240" cy="215" r="4" fill="#BA68C8"/>
+  </g>
+  
+  <!-- Cloud decorations -->
+  <g fill="#FFFFFF" opacity="0.6">
+    <ellipse cx="30" cy="30" rx="25" ry="15"/>
+    <ellipse cx="15" cy="35" rx="18" ry="12"/>
+    <ellipse cx="45" cy="35" rx="20" ry="13"/>
+    
+    <ellipse cx="270" cy="180" rx="22" ry="14"/>
+    <ellipse cx="257" cy="185" rx="16" ry="11"/>
+    <ellipse cx="283" cy="185" rx="18" ry="12"/>
+  </g>
+</svg>
+
